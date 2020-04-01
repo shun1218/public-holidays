@@ -606,3 +606,16 @@ test('2021', t => {
   ];
   t.deepEqual(PublicHolidays.getHolidaysInYear(2021), holiday);
 });
+
+// isHoliday()
+test('2020-01-01', t => {
+  t.is(PublicHolidays.isHoliday(new Date(2020, 0, 1)), true);
+});
+
+test('2020-01-02', t => {
+  t.is(PublicHolidays.isHoliday(new Date(2020, 0, 2)), false);
+});
+
+test('2020-01-01 12:34:56', t => {
+  t.is(PublicHolidays.isHoliday(new Date(2020, 0, 1, 12, 34, 56)), true);
+});
