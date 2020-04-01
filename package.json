@@ -1,0 +1,26 @@
+{
+  "name": "public-holidays",
+  "version": "1.0.0",
+  "description": "Public holidays",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shun1218/public-holidays.git"
+  },
+  "keywords": [
+    "holiday"
+  ],
+  "author": "shun_1218",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shun1218/public-holidays/issues"
+  },
+  "homepage": "https://github.com/shun1218/public-holidays#readme",
+  "devDependencies": {
+    "ava": "^3.5.1",
+    "sinon": "^9.0.1"
+  }
+}
