@@ -15,7 +15,7 @@ module.exports = class HolidayCollector {
       this._getSubstituteHolidays();
     }
     this._sortHolidays();
-    if (year > 1987) {
+    if (year > 1985) {
       this._getNationalHolidays()
       this._sortHolidays();
     }
@@ -40,7 +40,7 @@ module.exports = class HolidayCollector {
         let isHoliday = true;
         while (isHoliday) {
           date.setDate(date.getDate() + 1);
-          if (!this._findDate(date)) {
+          if (!this._findDate(date) && date.getDay()) {
             isHoliday = false;
           }
         }
