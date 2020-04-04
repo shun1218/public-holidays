@@ -16,7 +16,7 @@ module.exports = class HolidayCollector {
     }
     this._sortHolidays();
     if (year > 1985) {
-      this._getNationalHolidays()
+      this._getNationalHolidays();
       this._sortHolidays();
     }
     return this.holidays;
@@ -33,7 +33,7 @@ module.exports = class HolidayCollector {
   }
 
   _getSubstituteHolidays() {
-    let substituteHolidays = []
+    let substituteHolidays = [];
     this.holidays.forEach(holiday => {
       if (holiday.hasExtraHoliday) {
         let date = new Date(holiday.date.getTime());
@@ -82,7 +82,7 @@ module.exports = class HolidayCollector {
       let days = [
         new Holiday(new Date(2019, 4, 1), '天皇の即位の日', false),
         new Holiday(new Date(2019, 9, 22), '即位礼正殿の儀の行われる日', false)
-      ]
+      ];
       days.forEach(day => {
         this.holidays.push(day);
       });
