@@ -94,6 +94,9 @@ module.exports = class PublicHoliday {
     if (this.year === 2020) {
       date = new Date(this.year, 7, 10);
     }
+    if (this.year === 2021) {
+      date = new Date(this.year, 7, 8);
+    }
     let hasExtraHoliday = this._checkExtraHoliday(date);
     return new Holiday(date, '山の日', hasExtraHoliday);
   }
@@ -139,6 +142,9 @@ module.exports = class PublicHoliday {
     if (this.year === 2020) {
       date = new Date(this.year, 6, 23);
     }
+    if (this.year === 2021) {
+      date = new Date(this.year, 6, 22);
+    }
     let hasExtraHoliday = this._checkExtraHoliday(date);
     return new Holiday(date, '海の日', hasExtraHoliday);
   }
@@ -169,6 +175,9 @@ module.exports = class PublicHoliday {
     }
     if (this.year === 2020) {
       date = new Date(this.year, 6, 24);
+    }
+    if (this.year === 2021) {
+      date = new Date(this.year, 6, 23);
     }
     let hasExtraHoliday = this._checkExtraHoliday(date);
     return new Holiday(date, name, hasExtraHoliday);

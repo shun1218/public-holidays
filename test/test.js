@@ -584,7 +584,6 @@ test('2020', t => {
   t.deepEqual(PublicHolidays.getHolidaysInYear(2020), holiday);
 });
 
-// 通常年
 test('2021', t => {
   let holiday = [
     new Holiday(new Date(2021, 0, 1), '元日', false),
@@ -596,11 +595,12 @@ test('2021', t => {
     new Holiday(new Date(2021, 4, 3), '憲法記念日', false),
     new Holiday(new Date(2021, 4, 4), 'みどりの日', false),
     new Holiday(new Date(2021, 4, 5), 'こどもの日', false),
-    new Holiday(new Date(2021, 6, 19), '海の日', false),
-    new Holiday(new Date(2021, 7, 11), '山の日', false),
+    new Holiday(new Date(2021, 6, 22), '海の日', false),
+    new Holiday(new Date(2021, 6, 23), 'スポーツの日', false),
+    new Holiday(new Date(2021, 7, 8), '山の日', true),
+    new Holiday(new Date(2021, 7, 9), '振替休日', false),
     new Holiday(new Date(2021, 8, 20), '敬老の日', false),
     new Holiday(new Date(2021, 8, 23), '秋分の日', false),
-    new Holiday(new Date(2021, 9, 11), 'スポーツの日', false),
     new Holiday(new Date(2021, 10, 3), '文化の日', false),
     new Holiday(new Date(2021, 10, 23), '勤労感謝の日', false)
   ];

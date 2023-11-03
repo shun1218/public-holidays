@@ -1,6 +1,6 @@
 {
   "name": "public-holidays-jp",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Public holidays",
   "main": "index.js",
   "scripts": {
